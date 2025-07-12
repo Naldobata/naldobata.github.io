@@ -618,12 +618,28 @@ div#mais{
   transition: left 0.3s;
   z-index: 1000;
   width: 200px;
-  box-shadow: 5px 0px 0px rgb(0, 200, 255);
+  box-shadow: 5px 0px 0px rgb(0, 0, 0);
+  justify-content: center;
     
 }
 
 #menulateral.active {
   left: 0;
+}
+
+span#p{
+
+justify-content: center;
+color: white;
+background-color: black;
+
+}
+
+p#p{
+  margin-left: 40px;
+  
+  width: 120px;
+  
 }
 
 ul#ml{
@@ -665,7 +681,7 @@ li:hover{
   width: max-content;
   width: 100%;
   height: 100%;
-  padding: 20px 40px 20px 0px ;
+  
  
  }
 
