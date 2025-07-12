@@ -25,6 +25,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5C3TG2P"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<div id="menulateral">
+        <ul id="ml">
+            <li id="burger1">
+                <i id="burger1" class="material-symbols-outlined">menu</i> 
+            </li>
+            <li>
+                
+                <a  id="ml" href="cale.html"> <i id="ml" class="fa-regular fa-calendar-days"></i> Calendario</a>
+               
+            </li>
+            <li>
+                
+                <a id="ml" href="#"> <i id="ml" class="fa-solid fa-square-poll-vertical"></i> Resultados</a>
+               
+            </li>
+            <li>
+
+                <a id="ml" href="ele.html"> <i id="ml" class="fa-solid fa-list"></i></i> Elencos</a>
+            </li>
+            <li>
+               
+                <a id="ml" href="for.html">  <i id="ml" class="fa-solid fa-scale-balanced"></i>Formato</a>
+            </li>
+             <li>
+               
+                <a id="ml" href="not.html">  <i id="ml" class="fa-solid fa-newspaper"></i> Noticias</a>
+            </li>
+        </ul>
+    </div>
+    
       
     <div style="margin: 0px; padding: 0px; height: 100%;" id="t">
        <h4 style="margin-top: 0px; color: rgb(34, 25, 219);">.</h4>
@@ -48,6 +79,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
     </div>
 
+
+    
 
      
     <h1 style=" text-align: justify;margin-bottom:0px; margin-left: 10px;margin-right: 10px;">Campeonato de Futsal</h1> 
@@ -162,11 +195,35 @@ Saiba mais sobre o campeonato acessando o site sempre após os jogos para saber 
 
 
     <script>
-        function clickMenu() {
+       /* function clickMenu() {
        if (itens.style.display == 'block') 
        {itens.style.display = 'none'}
-       else {itens.style.display = 'block'} 
-                              }
+       else {itens.style.display = 'block'} */
+                              
+
+
+        const burger = document.getElementById('burger');
+  const menulateral = document.getElementById('menulateral');
+
+  // Ao clicar no botão, mostra o menu
+  burger.addEventListener('click', (e) => {
+    e.stopPropagation(); // Impede que feche logo em seguida
+    menulateral.classList.add('active');
+  });
+
+  // Ao clicar fora do menu, esconde
+  document.addEventListener('click', (e) => {
+    if (!menulateral.contains(e.target) && !burger.contains(e.target)) {
+      menulateral.classList.remove('active');
+    }
+  });
+
+  // Impede que clique dentro do menu feche ele
+  menulateral.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+
 
 
      
