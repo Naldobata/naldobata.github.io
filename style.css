@@ -854,7 +854,10 @@ div#op:hover{
 i#op{
     color:rgb(0, 51, 194);
     font-size: 70px;
+    text-decoration: none;
 }
+
+a#fa1{text-decoration: none;}
 
 p#op{
     margin: 0;
