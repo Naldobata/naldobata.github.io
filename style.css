@@ -1151,6 +1151,52 @@ td#ja{
 }
 
 
+/*media queries*/
+
+@media(max-width:5000px) and (min-width:750px){
+
+ 
+
+.mediaq{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+  
+
+}
+div#opdad2{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div#mq{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  
+  
+
+}
+div#mxad{width: 90%;
+margin: 10px 10px 10px 20px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: auto auto auto ;
+
+}
+}
+
+@media(max-width:2000px) and (min-width:1130px){
+  .container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+
+}
+}
+
 
 
 
