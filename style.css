@@ -104,6 +104,10 @@ span:hover {
 
 }
 
+.adsbygoogle{
+  display: none !important;
+}
+
 a:hover {
   color: black;
   animation: infinite;
